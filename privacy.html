@@ -21,7 +21,7 @@
 
   <main>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: May 19, 2026 · Version 1.0</p>
+    <p class="meta">Effective date: May 22, 2026 · Version 1.1</p>
     <p class="lede">Hueka is built so that your photos and personal data never leave your iPhone. This page explains in plain terms what that means.</p>
 
     <h2>1. The short version</h2>
@@ -29,7 +29,7 @@
       <li><strong>We do not collect your photos.</strong> Selfies you take in Hueka are analyzed entirely on your device using Apple's Vision framework. They are not uploaded, transmitted, copied off-device, or shared with anyone.</li>
       <li><strong>We do not collect personal information.</strong> Hueka does not ask for your name, email, phone number, contacts, or location.</li>
       <li><strong>We do not run analytics on what you do in the app.</strong> No event tracking, no fingerprinting, no third-party advertising SDKs.</li>
-      <li><strong>Subscription status is managed by Apple and our subscription provider (RevenueCat).</strong> Neither receives any of your photos. RevenueCat receives an anonymous device-generated identifier and Apple's subscription receipt — see §4 below.</li>
+      <li><strong>Subscription status is managed by Apple and our subscription provider (RevenueCat).</strong> Neither receives any of your photos. RevenueCat receives an anonymous device-generated identifier and Apple's subscription receipt — see §5 below.</li>
     </ul>
 
     <h2>2. What information is processed, and where</h2>
@@ -53,7 +53,17 @@
     <h2>3. Camera and photo library permissions</h2>
     <p>Hueka asks for camera access so you can take selfies, and for photo library access so you can pick existing photos. These permissions are used only to load the image data into the on-device analysis pipeline. Permission can be revoked at any time in iOS Settings → Hueka.</p>
 
-    <h2>4. Subscriptions (Apple App Store + RevenueCat)</h2>
+    <h2>4. Face data and Apple App Store Review Guideline 5.1.2(vi)</h2>
+    <p>Hueka uses Apple's Vision framework (and a bundled on-device Core ML face-parsing model) to detect face landmarks and segment hair, skin, and eye regions from a photo you provide. We explicitly confirm the following, in line with Apple App Store Review Guideline 5.1.2(vi):</p>
+    <ul>
+      <li>Face, depth, and facial-mapping data are <strong>processed only on your device</strong> and only for the purpose of generating your personal color analysis and the virtual try-on overlays you see in the app.</li>
+      <li>This data is <strong>never</strong> used for marketing, advertising, or use-based data mining — by us or by any third party.</li>
+      <li>This data is <strong>never</strong> shared with third parties, including our subscription provider RevenueCat.</li>
+      <li>No biometric template, embedding, or face-identification record is created or stored.</li>
+      <li>The analysis result that is saved on your device (e.g., your color season and palette) contains color values only — not your photo, not your face geometry.</li>
+    </ul>
+
+    <h2>5. Subscriptions (Apple App Store + RevenueCat)</h2>
     <p>Hueka Pro is a paid subscription handled by the Apple App Store. When you subscribe:</p>
     <ul>
       <li><strong>Apple</strong> processes the payment and stores your purchase record. Apple's Privacy Policy applies to that transaction: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</li>
@@ -61,16 +71,16 @@
     </ul>
     <p>You can cancel your subscription at any time from the App Store. See the <a href="terms.html#subscriptions">Terms of Use</a> for billing and renewal details.</p>
 
-    <h2>5. Diagnostic data</h2>
+    <h2>6. Diagnostic data</h2>
     <p>Hueka does not include third-party crash reporting or analytics SDKs. If you have opted in to "Share with App Developers" in iOS Settings → Privacy & Security → Analytics & Improvements, Apple may send us aggregated, anonymous crash and performance reports through App Store Connect. These reports do not contain your photos or personal data.</p>
 
-    <h2>6. Children</h2>
+    <h2>7. Children</h2>
     <p>Hueka is rated 4+ but is not directed at children under 13 and we do not knowingly collect any data from children. The app's on-device design means we collect no personal data from anyone.</p>
 
-    <h2>7. International users</h2>
-    <p>Because Hueka processes everything on your device, there is no cross-border transfer of personal data. The only data that leaves your device for subscriptions (anonymous user ID + Apple receipt) is processed by Apple and RevenueCat, who operate globally and apply their own safeguards (see links in §4).</p>
+    <h2>8. International users</h2>
+    <p>Because Hueka processes everything on your device, there is no cross-border transfer of personal data. The only data that leaves your device for subscriptions (anonymous user ID + Apple receipt) is processed by Apple and RevenueCat, who operate globally and apply their own safeguards (see links in §5).</p>
 
-    <h2>8. Your rights</h2>
+    <h2>9. Your rights</h2>
     <p>You can:</p>
     <ul>
       <li>Stop using the app at any time.</li>
@@ -81,10 +91,10 @@
     </ul>
     <p>If you are in the EU/EEA, the UK, California, or another jurisdiction with statutory privacy rights, you can contact us (see §10) to exercise any rights that apply to you. Because we do not collect personal data, most requests will be answered confirming that we do not hold any data about you.</p>
 
-    <h2>9. Changes to this policy</h2>
+    <h2>10. Changes to this policy</h2>
     <p>If we materially change this policy we will update the Effective date at the top and, where appropriate, notify users in-app or at the next app update. Continued use of Hueka after a change means you accept the updated policy.</p>
 
-    <h2>10. Contact</h2>
+    <h2>11. Contact</h2>
     <p>Questions about this Privacy Policy or how Hueka handles data: open an issue on our public <a href="https://github.com/nugaysamil/hueka-legal/issues">support repository</a> or visit our <a href="support.html">Support page</a> for other channels.</p>
   </main>
 
