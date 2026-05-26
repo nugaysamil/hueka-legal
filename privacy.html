@@ -21,7 +21,7 @@
 
   <main>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: May 22, 2026 · Version 1.1</p>
+    <p class="meta">Effective date: May 26, 2026 · Version 1.2</p>
     <p class="lede">Hueka is built so that your photos and personal data never leave your iPhone. This page explains in plain terms what that means.</p>
 
     <h2>1. The short version</h2>
@@ -59,8 +59,21 @@
       <li>Face, depth, and facial-mapping data are <strong>processed only on your device</strong> and only for the purpose of generating your personal color analysis and the virtual try-on overlays you see in the app.</li>
       <li>This data is <strong>never</strong> used for marketing, advertising, or use-based data mining — by us or by any third party.</li>
       <li>This data is <strong>never</strong> shared with third parties, including our subscription provider RevenueCat.</li>
-      <li>No biometric template, embedding, or face-identification record is created or stored.</li>
-      <li>The analysis result that is saved on your device (e.g., your color season and palette) contains color values only — not your photo, not your face geometry.</li>
+      <li>No biometric template, embedding, or face-identification record is created or stored. No face identification or recognition is performed — Hueka does not attempt to recognize who you are.</li>
+    </ul>
+
+    <h3>What gets saved on your device and for how long</h3>
+    <p>To let you revisit the Try-On screen without re-running the analysis every time, Hueka saves a small set of files inside its own sandbox on your iPhone:</p>
+    <ul>
+      <li>The JPEG of the best aligned selfie used for the analysis (so the Try-On overlays can re-render).</li>
+      <li>A JSON snapshot of the face landmark points detected by Vision (eye corners, lip outline, brow, face contour). These are 2D coordinates, not a biometric template.</li>
+      <li>Your color season, palette, and the LAB color values sampled from skin / hair / eye regions.</li>
+    </ul>
+    <p>These files live only in the app's sandbox storage. They are not synced via iCloud and never uploaded. They remain until one of the following happens, all of which are under your control:</p>
+    <ul>
+      <li>You run a new analysis — the previous photo + landmarks are replaced.</li>
+      <li>You uninstall Hueka — iOS removes the app sandbox immediately, deleting all of the above.</li>
+      <li>You clear the saved result from within the app (where this option is offered).</li>
     </ul>
 
     <h2>5. Subscriptions (Apple App Store + RevenueCat)</h2>
